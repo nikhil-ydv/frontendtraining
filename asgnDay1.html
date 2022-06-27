@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+        .buttonContainer {
+            width:30%;
+        }
+
+        .buttonContainer > .button {
+            width: 32%;
+            height: 100px;
+            font-size: 24px;
+        }
+        
+  
+  #c1 {
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    background-color: #2500b9;
+    position: static;
+    
+
+  }
+  
+  #c2 {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    background-color:#b02424 ;
+    position: absolute;
+    top: 130px;
+    left: 80px;  
+  }
+  
+  #c3 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color:#bbd3b9 ;
+    position: absolute;
+    top: 200px;
+    left: 155px;
+  }
+   
+      </style>
+   </head>
+   <body>
+    <h1>Concentric Circles</h1>
+    <div id ="Circles" class="Circles">
+        <figure id="c1" onclick=alert("first")></figure> 
+          <figure id="c2" onclick=alert("second")></figure>
+            <figure id="c3" onclick=alert("third")> </figure>
+        
+        
+    </div>
+    <h1>Button Revolve</h1>
+    <div id="btns" class="buttonContainer">
+      <button id="btn1" class="button">1</button>
+      <button id="btn2" class="button">2</button>
+      <button id="btn3" class="button">3</button>
+      <button id="btn4" class="button">4</button>
+      <button id="btn5" class="button">5</button>
+      <button id="btn6" class="button">6</button>
+      <button id="btn7" class="button">7</button>
+      <button id="btn8" class="button">8</button>
+      <button id="btn9" class="button">9</button>
+  </div>
+
+  <script>
+      btn5.onclick = function () {  
+        var viarableNum=btn1.innerHTML; 
+        btn1.innerHTML=btn4.innerHTML; 
+        btn4.innerHTML=btn7.innerHTML; 
+        btn7.innerHTML=btn8.innerHTML; 
+        btn8.innerHTML=btn9.innerHTML; 
+        btn9.innerHTML=btn6.innerHTML;
+        btn6.innerHTML=btn3.innerHTML; 
+        btn3.innerHTML=btn2.innerHTML; 
+        btn2.innerHTML=viarableNum;  
+      };
+  </script>
+
+
+   </body>
+</html>
